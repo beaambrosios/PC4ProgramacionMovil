@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria:">
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/rgCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCualquier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cualquier" />
+
+            <RadioButton
+                android:id="@+id/rbProgramacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programacion" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el idioma" />
+
+        <RadioGroup
+            android:id="@+id/rgIdioma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbIngles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingles"
+                app:useMaterialThemeColors="true" />
+
+            <RadioButton
+                android:id="@+id/rbEspañol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Español"
+                app:useMaterialThemeColors="true" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnObtenerChiste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obtener Chiste"
+            app:icon="@drawable/ic_add"/>
+
+        <TextView
+            android:id="@+id/txtResultadoJSON"
+            android:layout_width="379dp"
+            android:layout_height="366dp"
+            android:fontFamily="monospace"
+            android:text="Hello World!"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
